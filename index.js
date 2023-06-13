@@ -22,3 +22,6 @@ const questions = [
         name: 'shapeColor',
         message: 'Choose a color (or hex value) for the shape',
     }]
+
+inquirer.prompt(questions).then((answers) => {
+    console.log(answers); })
