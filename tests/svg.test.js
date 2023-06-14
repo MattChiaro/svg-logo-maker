@@ -37,7 +37,6 @@ test("should include a shape", () => {
   const svg = new SVG();
   svg.setText("SVG", "#333");
   const square = new Square();
-  square.setColor("dodgerblue");
-  svg.setShape(square);
+  svg.setShape(square, "dodgerblue");
   expect(svg.render()).toEqual(expectedSvg);
 });
