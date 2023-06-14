@@ -43,7 +43,7 @@ inquirer.prompt(questions).then((answers) => {
             newSVG.setShape(new shapes.Circle(), answers.shapeColor);
             break;
     }
-    genSVG('./examples/test.svg', newSVG)
+    genSVG('./examples/new.svg', newSVG)
 
 })
 
