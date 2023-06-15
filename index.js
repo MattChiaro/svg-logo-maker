@@ -30,19 +30,7 @@ const genSVG = (fileName, svg) => {
 
 
 inquirer.prompt(questions).then((answers) => {
-    const newSVG = new SVG()
-    newSVG.setText(answers.text, answers.textColor, answers.shape);
-    switch (answers.shape) {
-        case 'Square':
-            newSVG.setShape(new shapes.Square(), answers.shapeColor);
-            break;
-        case 'Triangle':
-            newSVG.setShape(new shapes.Triangle(), answers.shapeColor);
-            break;
-        case 'Circle':
-            newSVG.setShape(new shapes.Circle(), answers.shapeColor);
-            break;
-    }
+    const newSVG = new SVG(answers)
 
     genSVG('./examples/new.svg', newSVG)
 
