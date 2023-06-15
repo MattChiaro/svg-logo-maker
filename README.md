@@ -14,6 +14,7 @@ Clone the repository or download it as a zip file. Upon downloading, run ```npm 
 Upon navigating to the repository, ```node index.js``` runs the application.
 
 ![application running within the command line](images/application-run.png)
+![generated SVG](/examples/new.svg)
 
 A walkthrough video is provided [here.](https://drive.google.com/file/d/1No13ztfYQvT8tr3tDaK3oUQo3hr47YOr/view)
 
